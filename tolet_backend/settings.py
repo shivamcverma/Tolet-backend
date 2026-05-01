@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-3j%y%r%m8g6mqn*609+xm30^k&ppbbfx5snc7u$%9s(58-&27b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]  # Allow all hosts for development, change in production
+ALLOWED_HOSTS = ["*","https://tolet-backend-mb28.vercel.app/"]  # Allow all hosts for development, change in production
 
 
 # Application definition
