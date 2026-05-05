@@ -34,7 +34,11 @@ ALLOWED_HOSTS = ["*"]  # Allow all hosts for development, change in production
 CSRF_TRUSTED_ORIGINS = [
     "https://*.vercel.app"
 ]
+CORS_ALLOWED_ORIGINS = [
+    "https://tolet-frontend-eight.vercel.app"
+]
 
+CORS_ALLOW_ALL_ORIGINS = True
 DEBUG = False
 
 # Application definition
@@ -66,6 +70,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # Allows all origins for development
@@ -144,6 +149,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
