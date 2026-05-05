@@ -32,13 +32,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]  # Allow all hosts for development, change in production
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.vercel.app"
+    "https://tolet-frontend-eight.vercel.app"
 ]
 CORS_ALLOWED_ORIGINS = [
     "https://tolet-frontend-eight.vercel.app"
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 DEBUG = False
 
 # Application definition
@@ -62,9 +62,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',   # 👈 TOP pe lao
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
