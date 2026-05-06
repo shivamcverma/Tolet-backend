@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3j%y%r%m8g6mqn*609+xm30^k&ppbbfx5snc7u$%9s(58-&27b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = ["*"]  # Allow all hosts for development, change in production
 CSRF_TRUSTED_ORIGINS = [
@@ -39,7 +39,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-DEBUG = False
+# DEBUG = False  # Removed hardcoded False
 
 # Application definition
 
@@ -145,7 +145,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
