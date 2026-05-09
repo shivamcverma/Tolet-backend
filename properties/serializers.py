@@ -28,6 +28,16 @@ class PropertySerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         uploaded_images = validated_data.pop('uploaded_images', [])
+        
+        # Parse amenities if it's a string (happens with multipart/form-data)
+        amenities = validated_data.get('amenities')
+        if isinstance(amenities, str):
+            import json
+            try:
+                validated_data['amenities'] = json.loads(amenities)
+            except json.JSONDecodeError:
+                pass
+
         property_obj = Property.objects.create(**validated_data)
         
         for image in uploaded_images:
