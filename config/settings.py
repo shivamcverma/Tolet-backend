@@ -109,9 +109,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tolet_db',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
+        'USER': 'tolet_db_user',
+        'PASSWORD': 'gKCWnrwVjp1d8y2VWcJKGdmyQfZzBlQc',
+        'HOST': 'https://tolet-backend-lpe4.onrender.com',
         'PORT': '5432',
     }
 }
