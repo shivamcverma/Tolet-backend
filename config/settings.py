@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zfi6n7d2ha*+cifc$&*s5*#k(@5bs7$ln&^_7_1o6=e&7b_$h)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://tolet-backend-lpe4.onrender.com"]
+ALLOWED_HOSTS = ["*"]
 AUTH_USER_MODEL = 'users.User'
 
 
