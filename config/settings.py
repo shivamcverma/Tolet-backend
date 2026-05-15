@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zfi6n7d2ha*+cifc$&*s5*#k(@5bs7$ln&^_7_1o6=e&7b_$h)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://tolet-backend-lpe4.onrender.com"]
 AUTH_USER_MODEL = 'users.User'
 
 
@@ -100,7 +100,7 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:5173",
 
-    "http://127.0.0.1:5173",
+    "https://tolet-backend-lpe4.onrender.com",
 ]
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
