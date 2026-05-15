@@ -111,7 +111,7 @@ DATABASES = {
         'NAME': 'tolet_db',
         'USER': 'tolet_db_user',
         'PASSWORD': 'gKCWnrwVjp1d8y2VWcJKGdmyQfZzBlQc',
-        'HOST': 'dpg-d83d42pkh4rs73ag0sag-a',
+        'HOST': 'dpg-d83d42pkh4rs73ag0sag-a.singapore-postgres.render.com',
         'PORT': '5432',
     }
 }
