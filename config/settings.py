@@ -111,7 +111,7 @@ DATABASES = {
         'NAME': 'tolet_db',
         'USER': 'tolet_db_user',
         'PASSWORD': 'gKCWnrwVjp1d8y2VWcJKGdmyQfZzBlQc',
-        'HOST': 'https://tolet-backend-lpe4.onrender.com',
+        'HOST': 'dpg-d83d42pkh4rs73ag0sag-a',
         'PORT': '5432',
     }
 }
